@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript DOM修改元素属性</title>
+    </head>
+    <body>
+        <h3>JavaScript DOM修改元素属性</h3>
+        <hr />
+		<h4>原始状态：</h4>
+        <img id="img01" src="https://caixiao233.github.io/caixiao/sunflower.jpg" alt="向日葵" /><br>
+	<img id="img01" src="https://caixiao233.github.io/caixiao/image/sunflower.jpg" alt="向日葵" />
+<br>
+        <img id="img01" src="E:/大三上学习内容/web后端/实验/2/image/sunflower.jpg" alt="向日葵" />
+		<h4>使用JavaScript修改src属性后：</h4>
+		<img id="img02" src="image/sunflower.jpg" alt="向日葵" />
+        <script>
+		//获取id="img02"的图片元素
+		var img = document.getElementById("img02");
+		//更改其src和alt属性值
+		img.src = "image/lily.jpg";
+		img.alt = "百合";
+        </script>
+    </body>
+</html>
